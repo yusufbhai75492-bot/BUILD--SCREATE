@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Scroll Animation Website</title>
+    <!-- AOS CSS (एनिमेशन के लिए) -->
+    <link href="https://unpkg.com" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            border-bottom: 1px solid #222;
+        }
+        .bg-1 { background: linear-gradient(135deg, #1f1c2c, #928dab); }
+        .bg-2 { background: linear-gradient(135deg, #8a2387, #e94057, #f27121); }
+        .bg-3 { background: linear-gradient(135deg, #00c6ff, #0072ff); }
+        .bg-4 { background: linear-gradient(135deg, #11998e, #38ef7d); }
+        h1 { font-size: 3.5rem; margin-bottom: 10px; }
+        p { font-size: 1.5rem; color: #eee; }
+    </style>
+</head>
+<body>
+
+    <!-- Section 1 (Welcome) -->
+    <div class="section bg-1">
+        <h1 data-aos="fade-down" data-aos-duration="1500">मेरी स्क्रॉल वेबसाइट में आपका स्वागत है! 👋</h1>
+        <p data-aos="fade-up" data-aos-duration="1500">नीचे स्क्रॉल करके जादू देखें</p>
+    </div>
+
+    <!-- Section 2 (Fade Effect) -->
+    <div class="section bg-2">
+        <h1 data-aos="zoom-in" data-aos-duration="1000">ज़ूम इन एनिमेशन ✨</h1>
+        <p data-aos="fade-left" data-aos-duration="1200">यह हिस्सा बाईं तरफ से आ रहा है।</p>
+    </div>
+
+    <!-- Section 3 (Flip Effect) -->
+    <div class="section bg-3">
+        <h1 data-aos="flip-left" data-aos-duration="1000">फ्लिप एनिमेशन 🔄</h1>
+        <p data-aos="fade-right" data-aos-duration="1200">यह हिस्सा दाईं तरफ से आ रहा है।</p>
+    </div>
+
+    <!-- Section 4 (Final) -->
+    <div class="section bg-4">
+        <h1 data-aos="fade-up-right" data-aos-duration="1000">वेबसाइट तैयार है! 🎉</h1>
+        <p data-aos="zoom-out" data-aos-duration="1500">गिटहब पेजेस से यह बिल्कुल फ्री में लाइव है।</p>
+    </div>
+
+    <!-- AOS JavaScript (एनिमेशन चालू करने के लिए) -->
+    <script src="https://unpkg.com"></script>
+    <script>
+        AOS.init(); // एनिमेशन को शुरू करना
+    </script>
+</body>
+</html>
